@@ -1,2 +1,4 @@
 - npm run build:prod - прод сборка
 - npm run build:dev - дев сборка
+- npm run start - watch сборка
+- npm run start -- --env port=5000
