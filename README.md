@@ -1,4 +1,5 @@
-- npm run build:prod - прод сборка
-- npm run build:dev - дев сборка
-- npm run start - watch сборка
+- npm run build:prod
+- npm run build:dev
+- npm run start
 - npm run start -- --env port=5000
+- npm run build:prod -- --env analyzer=true
