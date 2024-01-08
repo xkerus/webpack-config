@@ -13,7 +13,7 @@ export const App = () => {
     return (
         <div>
             <div>
-                <img width={250} src={catPng} alt="cat"/>
+                <Link to={'/'}><img width={250} src={catPng} alt="cat"/></Link>
                 <img width={250} src={catJng} alt="cat"/>
             </div>
             <div>
