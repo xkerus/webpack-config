@@ -1,6 +1,6 @@
 import {createRoot} from "react-dom/client";
 import App from "./components/App";
-import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import {createHashRouter, RouterProvider} from "react-router-dom";
 import {LazyAbout} from "@/pages/about/About.lazy";
 import {Shop} from "@/pages/shop";
 import React, {Suspense} from "react";
@@ -13,7 +13,7 @@ if (!root) {
 
 const container = createRoot(root)
 
-const router = createBrowserRouter([
+const router = createHashRouter([
     {
         path: "/",
         element: <App/>,
@@ -31,5 +31,5 @@ const router = createBrowserRouter([
 ]);
 
 container.render(
-    <RouterProvider router={router}/>
+        <RouterProvider router={router} />
 )
